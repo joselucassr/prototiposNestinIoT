@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:700');
+
+
+.corpo{
+    /*border: 1px solid rgba(0,0,0,0.4);*/
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 9px 9px 28px rgba(0,0,0,0.1);
+}
+.iconBateria{
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #218536;
+}
+
+.hora{
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}

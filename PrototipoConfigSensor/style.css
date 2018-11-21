@@ -1,0 +1,11 @@
+#range .slider-track-high {
+    background: #ffd428;
+}
+
+#range .slider-track-low {
+    background: #5dfff8;
+}
+
+#range .slider-selection {
+    background: #a1ff83;
+}
