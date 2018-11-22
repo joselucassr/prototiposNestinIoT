@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Prototipo Login Painel Geral</title>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/painelgeral">Painel de Eventos</a>
+            </li>
+        </ul>
+        <div class="row" style="padding-right: 20px">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="col-12 float-right ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Cliente/Sensor">
+                    <button class="btn btn-outline-info my-2 my-sm-0 float-right " type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" style="padding: 0 10px;">
+                    <a class="btn btn-danger" href="#"><i class="fas fa-power-off"></i>     </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+
+    <!-- IDÉIA ABANDONADA
+    <div class="text-center" style="padding-bottom: 40px; padding-top: 15px">
+    <h1>Dados Gerais</h1>
+    </div>
+
+    <div class="row" style="border-bottom: 1px solid rgba(0,0,0,0.45);">
+
+    <!-- Tabela de Dados da Empresa
+    <div class="col-md-6">
+        <h2>Empresa</h2>
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Nome</th>
+                <td>Coca Cola</td>
+            </tr>
+            <tr>
+                <th scope="row">CNPJ</th>
+                <td>XXXXXXX/XXXX</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>cocacola@email.com</td>
+            </tr>
+            <tr>
+                <th scope="row">Telefone</th>
+                <td>99999999</td>
+            </tr>
+            <tr>
+                <th scope="row">Telefone 2</th>
+                <td>99999999</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade</th>
+                <td>Brasília</td>
+            </tr>
+            <tr>
+                <th scope="row">Estado</th>
+                <td>DF</td>
+            </tr>
+            <tr>
+                <th scope="row">CEP</th>
+                <td>00000-000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Responsável
+    <div class="col-md-6">
+        <h2>Responsável</h2>
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Nome</th>
+                <td>Robsu</td>
+            </tr>
+            <tr>
+                <th scope="row">CPF</th>
+                <td>XXXXXXXXXXX</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>robsu@email.com</td>
+            </tr>
+            <tr>
+                <th scope="row">Telefone</th>
+                <td>99999999</td>
+            </tr>
+            <tr>
+                <th scope="row">Celular</th>
+                <td>99999999</td>
+            </tr>
+            <tr>
+                <th scope="row">Gênero</th>
+                <td>Masculino</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    -->
+
+    <!-- IDÉIA NOVA -->
+
+    <h2 class="text-center">Dados Gerais</h2>
+    <button type="submit" class="btn btn-warning float-right" style="color: #fff">Ir para Grupos</button>
+    <form>
+
+        <!-- Empresa -->
+        <div class="form-empresa">
+            <h3>Empresa</h3>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nomeempresa">Nome Empresa</label>
+                    <input type="text" class="form-control" id="nomeempresa" placeholder="Nome da empresa">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="number" class="form-control" id="cnpj" placeholder="XX.XXX.XXX/XXXX-XX">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="emailempresa">Email</label>
+                    <input type="email" class="form-control" id="emailempresa" placeholder="email@empresa.com">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="telefoneempresa">Telefone</label>
+                    <input type="tel" class="form-control" id="telefoneempresa" placeholder="(00)0000-0000">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="telefone2">Telefone 2</label>
+                    <input type="tel" class="form-control" id="telefone2" placeholder="(00)00000-0000">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="form-control">
+                        <option value="">Selecione</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MG">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="PR">PR</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SE">SE</option>
+                        <option value="SP">SP</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="00000-000">
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsável Legal -->
+        <div class="form-empresa">
+            <h3>Responsável</h3>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF</label>
+                    <input type="number" class="form-control" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="emailresponsavel">Email</label>
+                    <input type="email" class="form-control" id="emailresponsavel" placeholder="email@email.com">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="telefoneresponsavel">Telefone</label>
+                    <input type="tel" class="form-control" id="telefoneresponsavel" placeholder="(00)0000-0000">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="celular">Celular</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="(00)00000-0000">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Gênero</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="masculino" value="1" checked>
+                            <label class="form-check-label" for="masculino">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="feminino" value="2">
+                            <label class="form-check-label" for="feminino">
+                                Feminino
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="outro" value="3">
+                            <label class="form-check-label" for="outro">
+                                Outro
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Salvar Alterações</button>
+    </form>
+
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script>
+
+
+</script>
+
+</body>
